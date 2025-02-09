@@ -36,16 +36,25 @@ This project focuses on developing an **AI-powered health assistant** that provi
 The AI-powered health assistant is designed to **help individuals make informed health decisions** by providing **accurate, region-specific, and personalized health recommendations**. It leverages **machine learning models, speech recognition, and retrieval-augmented generation (RAG)** to enhance user experience.
 
 ## 🛠 Installation
+1. Ensure you have the necessary directories:
+   ```bash
+   mkdir -p data vectorstore
+   ```
+2. Clone the repository:
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/ai-health-assistant.git
    cd ai-health-assistant
    ```
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the application:
+4. Ingest data for Ollama 3.2:
+   ```bash
+   python ingest.py
+   ```
+5. Run the application:
    ```bash
    streamlit run app.py
    ```
