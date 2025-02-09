@@ -1,0 +1,13 @@
+streamlit 
+transformers
+torch
+sentence-transformers
+nltk
+langchain-community
+pypdf
+langchain
+torch
+accelerate
+transformers
+sentence_transformers
+faiss_cpu
