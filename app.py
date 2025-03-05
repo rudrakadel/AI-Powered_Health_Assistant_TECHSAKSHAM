@@ -56,7 +56,7 @@ def healthcare_chatbot(user_input):
 
 # Main function for Streamlit app
 def main():
-    st.title("Advanced Healthcare Chatbot")
+    st.title("Healix - Advanced Healthcare Chatbot")
     st.subheader("Your virtual healthcare assistant")
 
     user_input = st.text_input("How can I assist you today?", "")
@@ -64,7 +64,7 @@ def main():
         if user_input.strip():  # Check for non-empty input
             st.write("**User:** ", user_input)
             response = healthcare_chatbot(user_input)
-            st.write("**Healthcare Assistant:** ", response)
+            st.write("**Healix:** ", response)
         else:
             st.warning("Please enter a query before submitting!")
 
