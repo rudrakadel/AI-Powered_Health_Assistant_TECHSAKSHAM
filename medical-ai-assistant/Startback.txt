@@ -1,0 +1,19 @@
+cd D:\archive\medical-ai-assistant
+medicalvenvnew\Scripts\activate
+
+
+Docker Start Redis 
+
+# Terminal 1 - Stop FastAPI (Ctrl+C), then restart:
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# Terminal 3 - Stop Celery (Ctrl+C), then restart:
+celery -A celery_worker.celery_app worker --loglevel=info --pool=solo
+
+
+# Terminal 4
+cd D:\archive\medical-ai-assistant
+medicalvenvnew\Scripts\activate
+streamlit run frontend\streamlit_app.py
+
+without RAG USE OLLAMA IS GIVING ANSWER
